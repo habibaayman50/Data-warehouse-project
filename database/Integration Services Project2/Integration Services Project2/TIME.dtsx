@@ -1,0 +1,1858 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/6/2023 11:07:57 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3N7G04Q"
+  DTS:CreatorName="DESKTOP-3N7G04Q\habib"
+  DTS:DTSID="{03239FF8-0F63-4EA3-A5E0-571B93609FD4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{395B70AC-5157-43CF-9DF9-3C367913B723}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0C47B4EB-EEF4-4329-ABAE-86A44C6A95E9}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{0C47B4EB-EEF4-4329-ABAE-86A44C6A95E9}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7695F34A-F214-443B-96DB-311A66632329}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{7695F34A-F214-443B-96DB-311A66632329}DESKTOP-3N7G04Q.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1D82DE9A-D4DF-487B-91E3-03A284553BE1}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{1D82DE9A-D4DF-487B-91E3-03A284553BE1}DESKTOP-3N7G04Q.SA.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{88207E69-33CA-4CB9-AA5E-F1832F7D0C67}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{88207E69-33CA-4CB9-AA5E-F1832F7D0C67}DESKTOP-DF4A9BU.database1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1DC4A9C8-0284-486E-B52B-2C9CB5E0A576}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{1DC4A9C8-0284-486E-B52B-2C9CB5E0A576}DESKTOP-DF4A9BU.database1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5DEC9A5A-A900-44BE-B5CC-DF961F89ED68}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{5DEC9A5A-A900-44BE-B5CC-DF961F89ED68}DESKTOP-DF4A9BU.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D223D79C-A103-407E-800A-9DB72ABB44D0}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{D223D79C-A103-407E-800A-9DB72ABB44D0}DESKTOP-DF4A9BU.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DD30497A-C4FD-4AE6-8F57-1E1CAEDA9666}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{DD30497A-C4FD-4AE6-8F57-1E1CAEDA9666}DESKTOP-DF4A9BU.SA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{28844BAB-0DBA-453A-A565-ADDD4107388E}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{28844BAB-0DBA-453A-A565-ADDD4107388E}DESKTOP-DF4A9BU.SA 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9023DB19-A5AD-4A53-B057-205AA19D1C2C}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{9023DB19-A5AD-4A53-B057-205AA19D1C2C}DESKTOP-DF4A9BU.SA 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load_DIM_Time"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F6D5473B-2D76-420C-B15A-45232EEE2975}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_DIM_Time"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_DIM_Time\DWH_TIME"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DWH_TIME"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIM_Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Time\DWH_TIME.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[TimeCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="TimeCode"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[TimeCode]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[TimeCode]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[DayY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="DayY"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[DayY]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[DayY]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[MonthH]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MonthH"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[MonthH]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[MonthH]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[AcademicYear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AcademicYear"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[AcademicYear]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[AcademicYear]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[semester]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="semester"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[semester]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[LectureId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LectureId"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[LectureId]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[LectureId]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].Columns[Lecture]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Lecture"
+                      externalMetadataColumnId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[Lecture]"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Lecture]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="TimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[DayY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="DayY" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[MonthH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MonthH" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AcademicYear" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LectureId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input].ExternalColumns[Lecture]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecture" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Time\DWH_TIME.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\DWH_TIME.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\DWH_TIME.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\DWH_TIME.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Time\new record?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="new record?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_Time]) [refTable]
+where [refTable].[TimeCode] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TimeCode" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Date" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayY" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthH" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AcademicYear" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="semester" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Lecture" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[TimeCode]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Time\new record?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input].Columns[TimeCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="TimeCode"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[TimeCode]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">TimeCode</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Time\new record?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Time\new record?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Time\new record?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\new record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\new record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\new record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\new record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Time\STG_TIME"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="STG_TIME"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Time\STG_TIME.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[TimeCode]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[TimeCode]"
+                      name="TimeCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[DayY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[DayY]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[DayY]"
+                      name="DayY"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[MonthH]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[MonthH]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[MonthH]"
+                      name="MonthH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[AcademicYear]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[AcademicYear]"
+                      name="AcademicYear"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[semester]"
+                      name="semester"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[LectureId]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[LectureId]"
+                      name="LectureId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Lecture]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[Lecture]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].Columns[Lecture]"
+                      name="Lecture"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="TimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[DayY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="DayY" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[MonthH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MonthH" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AcademicYear" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LectureId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output].ExternalColumns[Lecture]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecture" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[TimeCode]"
+                      name="TimeCode" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[DayY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[DayY]"
+                      name="DayY" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[MonthH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[MonthH]"
+                      name="MonthH" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[AcademicYear]"
+                      name="AcademicYear" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      name="semester" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[LectureId]"
+                      name="LectureId" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[Lecture]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[Lecture]"
+                      name="Lecture" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_DIM_Time.Paths[Lookup No Match Output]"
+              endId="Package\Load_DIM_Time\DWH_TIME.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Load_DIM_Time\new record?.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Load_DIM_Time.Paths[OLE DB Source Output]"
+              endId="Package\Load_DIM_Time\new record?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_DIM_Time\STG_TIME.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load_STG_Time"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{EC0B5910-E6AA-4FC6-B202-368E7C9125AB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_STG_Time"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_STG_Time\DB Time"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="DB Time"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Time\DB Time.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[TimeCode]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[TimeCode]"
+                      name="TimeCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Dayy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Dayy]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Dayy]"
+                      name="Dayy"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Monthh]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Monthh]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Monthh]"
+                      name="Monthh"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[AcademicYear]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[AcademicYear]"
+                      name="AcademicYear"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[semester]"
+                      name="semester"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[LectureId]"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[LectureId]"
+                      name="LectureId"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="TimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Dayy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Dayy" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[Monthh]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Monthh" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AcademicYear" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].ExternalColumns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LectureId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[TimeCode]"
+                      name="TimeCode" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Dayy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Dayy]"
+                      name="Dayy" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Monthh]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[Monthh]"
+                      name="Monthh" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[AcademicYear]"
+                      name="AcademicYear" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      name="semester" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[LectureId]"
+                      name="LectureId" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Time\get lecture information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get lecture information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Lecture]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Lecture]) [refTable]
+where [refTable].[LectureId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureNumber" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Salary" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProfessorId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RoomId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[LectureId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Time\get lecture information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input].Columns[LectureId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LectureId"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[LectureId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LectureId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Match Output].Columns[LKP_NAME_LECTURE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Match Output].Columns[LKP_NAME_LECTURE]"
+                      name="LKP_NAME_LECTURE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">LectureName</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Time\STG Time"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="STG Time"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Time\STG Time.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[TimeCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="TimeCode"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[TimeCode]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[TimeCode]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[Dayy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Dayy"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[DayY]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Dayy]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[Monthh]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Monthh"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[MonthH]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[Monthh]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[AcademicYear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AcademicYear"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[AcademicYear]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[AcademicYear]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[semester]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="semester"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[semester]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[LectureId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LectureId"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[LectureId]"
+                      lineageId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output].Columns[LectureId]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].Columns[LKP_NAME_LECTURE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LKP_NAME_LECTURE"
+                      externalMetadataColumnId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[Lecture]"
+                      lineageId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Match Output].Columns[LKP_NAME_LECTURE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[TimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="TimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[DayY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="DayY" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[MonthH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MonthH" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[AcademicYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AcademicYear" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[LectureId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LectureId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input].ExternalColumns[Lecture]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecture" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Time\STG Time.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Time\STG Time.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\STG Time.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Time\STG Time.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Time\STG Time.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_STG_Time.Paths[Lookup Match Output]"
+              endId="Package\Load_STG_Time\STG Time.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_STG_Time\get lecture information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_STG_Time.Paths[OLE DB Source Output]"
+              endId="Package\Load_STG_Time\get lecture information.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_STG_Time\DB Time.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Trancate STG table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{45D3C77F-0C19-4F2E-B153-71931AE0B479}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Trancate STG table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DD30497A-C4FD-4AE6-8F57-1E1CAEDA9666}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE STG_Time;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{0FCE6249-A665-454D-B650-0B5E6E4CADCE}"
+      DTS:From="Package\Trancate STG table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load_STG_Time" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C8C77AA4-E51C-4B82-8DA4-03746945D66C}"
+      DTS:From="Package\Load_STG_Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load_DIM_Time" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Load_DIM_Time"
+          TopLeft="100.500000596046,202.3823548609" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Load_STG_Time"
+          TopLeft="99.7857153804936,102.029412697756" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Trancate STG table"
+          TopLeft="79.7857155507925,13.1470589307765" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="164.185715550793,54.7470589307765">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.1999998297011,47.2823537669792"
+              Start="0,0"
+              End="13.1999998297011,39.7823537669792">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6411768834896" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.6411768834896"
+                    Point2="0,23.6411768834896"
+                    Point3="4,23.6411768834896" />
+                  <mssgle:LineSegment
+                    End="9.19999982970108,23.6411768834896" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.19999982970108,23.6411768834896"
+                    Point2="13.1999998297011,23.6411768834896"
+                    Point3="13.1999998297011,27.6411768834896" />
+                  <mssgle:LineSegment
+                    End="13.1999998297011,39.7823537669792" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="177.74285798827,143.629412697756">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.752942163144"
+              Start="0,0"
+              End="0,51.252942163144">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.252942163144" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load_DIM_Time">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="128,41.6"
+          Id="Package\Load_DIM_Time\STG_TIME"
+          TopLeft="201,26" />
+        <NodeLayout
+          Size="132.8,41.6"
+          Id="Package\Load_DIM_Time\DWH_TIME"
+          TopLeft="209,287" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Load_DIM_Time\new record?"
+          TopLeft="212,149" />
+        <EdgeLayout
+          Id="Package\Load_DIM_Time.Paths[Lookup No Match Output]"
+          TopLeft="277.7,190.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,96.4"
+              Start="0,0"
+              End="0,88.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,38.6453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_DIM_Time.Paths[OLE DB Source Output]"
+          TopLeft="265,67.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15,81.4"
+              Start="0,0"
+              End="15,73.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.7"
+                    Point2="0,40.7"
+                    Point3="4,40.7" />
+                  <mssgle:LineSegment
+                    End="11,40.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11,40.7"
+                    Point2="15,40.7"
+                    Point3="15,44.7" />
+                  <mssgle:LineSegment
+                    End="15,73.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Time\STG_TIME">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Time\DWH_TIME">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Time\new record?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_Time]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load_STG_Time">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="185.6,41.6"
+          Id="Package\Load_STG_Time\get lecture information"
+          TopLeft="155.500002043588,118.852942345464" />
+        <NodeLayout
+          Size="118.4,41.6"
+          Id="Package\Load_STG_Time\DB Time"
+          TopLeft="144.071430931286,26.9117650061743" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Load_STG_Time\STG Time"
+          TopLeft="151.214287173991,209.264707898599" />
+        <EdgeLayout
+          Id="Package\Load_STG_Time.Paths[OLE DB Source Output]"
+          TopLeft="203.271430931286,68.5117650061743">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.0285711123019,50.3411773392899"
+              Start="0,0"
+              End="45.0285711123019,42.8411773392899">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.1705886696449" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.1705886696449"
+                    Point2="0,25.1705886696449"
+                    Point3="4,25.1705886696449" />
+                  <mssgle:LineSegment
+                    End="41.0285711123019,25.1705886696449" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.0285711123019,25.1705886696449"
+                    Point2="45.0285711123019,25.1705886696449"
+                    Point3="45.0285711123019,29.1705886696449" />
+                  <mssgle:LineSegment
+                    End="45.0285711123019,42.8411773392899" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_STG_Time.Paths[Lookup Match Output]"
+          TopLeft="248.300002043588,160.452942345464">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-35.0857148695965,48.8117655531345"
+              Start="0,0"
+              End="-35.0857148695965,41.3117655531345">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4058827765673" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4058827765673"
+                    Point2="0,24.4058827765673"
+                    Point3="-4,24.4058827765673" />
+                  <mssgle:LineSegment
+                    End="-31.0857148695965,24.4058827765673" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.0857148695965,24.4058827765673"
+                    Point2="-35.0857148695965,24.4058827765673"
+                    Point3="-35.0857148695965,28.4058827765673" />
+                  <mssgle:LineSegment
+                    End="-35.0857148695965,41.3117655531345" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-65.7342441535482,29.4058827765673,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Time\get lecture information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Lecture]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Time\DB Time">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Time\STG Time">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

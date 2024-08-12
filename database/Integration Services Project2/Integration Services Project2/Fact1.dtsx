@@ -1,0 +1,2643 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/6/2023 4:43:24 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3N7G04Q"
+  DTS:CreatorName="DESKTOP-3N7G04Q\habib"
+  DTS:DTSID="{634610B4-C742-437C-8C1D-FE23EB748992}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{3D0C4252-6CE4-4C47-97DD-E7F5E9069732}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BD047C91-4BE9-4084-B3DC-A547E0060476}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{BD047C91-4BE9-4084-B3DC-A547E0060476}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1CF2B19D-D263-4FBA-BA59-CB3730F7F267}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{1CF2B19D-D263-4FBA-BA59-CB3730F7F267}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E8493F40-56EC-41B8-B6DC-FB6833D22D5C}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E8493F40-56EC-41B8-B6DC-FB6833D22D5C}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DFE6CF52-D43B-4FD0-A693-21EA746B5B15}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{DFE6CF52-D43B-4FD0-A693-21EA746B5B15}DESKTOP-3N7G04Q.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EE079FA6-F72A-4A3A-BFA2-4CE677EF363E}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{EE079FA6-F72A-4A3A-BFA2-4CE677EF363E}DESKTOP-3N7G04Q.SA.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{16EC99DE-3D95-4F3B-99CC-B54C0AAE1E85}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{16EC99DE-3D95-4F3B-99CC-B54C0AAE1E85}DESKTOP-3N7G04Q.SA.bacpac 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E36B2658-4FF7-4431-8B56-AA9AA2DD3C60}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E36B2658-4FF7-4431-8B56-AA9AA2DD3C60}DESKTOP-DF4A9BU.database1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{373BAD88-8657-4697-9C81-FA0B4184A38A}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{373BAD88-8657-4697-9C81-FA0B4184A38A}DESKTOP-DF4A9BU.database1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{166160FB-699A-4EE1-A5CD-EDF2C332E1B5}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{166160FB-699A-4EE1-A5CD-EDF2C332E1B5}DESKTOP-DF4A9BU.database1 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E92986E7-6863-4639-B2B0-FA6323D13B61}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E92986E7-6863-4639-B2B0-FA6323D13B61}DESKTOP-DF4A9BU.database1 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{21EF805D-23CA-42CF-8D47-671727CA6E5A}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{21EF805D-23CA-42CF-8D47-671727CA6E5A}DESKTOP-DF4A9BU.database1 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{664CE6B6-EC88-4BC2-9B4B-1614DBD5C8A0}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{664CE6B6-EC88-4BC2-9B4B-1614DBD5C8A0}DESKTOP-DF4A9BU.database1 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BBB58602-866D-4B1A-AA88-8F80574F6E70}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{BBB58602-866D-4B1A-AA88-8F80574F6E70}DESKTOP-DF4A9BU.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AE6D3CA3-8B89-4F61-B8A7-8485A414B4CC}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{AE6D3CA3-8B89-4F61-B8A7-8485A414B4CC}DESKTOP-DF4A9BU.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4A21EDBF-BADB-45E4-A9EC-B243B8F4D962}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{4A21EDBF-BADB-45E4-A9EC-B243B8F4D962}DESKTOP-DF4A9BU.SA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{58BBBBEF-50EA-40E5-9E74-3B55E06C1786}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{58BBBBEF-50EA-40E5-9E74-3B55E06C1786}DESKTOP-DF4A9BU.SA 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3865221A-8822-4815-901E-995A5B1FE1E8}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{3865221A-8822-4815-901E-995A5B1FE1E8}DESKTOP-DF4A9BU.SA 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{55D2EA9E-D288-4B55-8B63-07F87E74A965}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{55D2EA9E-D288-4B55-8B63-07F87E74A965}DESKTOP-DF4A9BU.SA 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C01C118D-CAEE-4568-89E6-5B3D21FD49A0}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Desktop\semester 2\fact 1\fact 1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DWH_Fact_Academy"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{9748CDBF-95B5-4266-A959-76F7FB5237FB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DWH_Fact_Academy"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DWH_Fact_Academy\DW Fact_Academy"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DW Fact_Academy"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Fact_Academy]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DWH_Fact_Academy\DW Fact_Academy.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[Student_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Student_Id"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Student_Id]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Student_Id]" />
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[Room_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Room_Id"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Room_Id]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Room_Id]" />
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[Event_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Event_Id"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Event_Id]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Event_Id]" />
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Level_Id]" />
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[Time_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Time_Code"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Time_Code]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Time_Code]" />
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].Columns[RegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationFees"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[RegistrationFees]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Academy_key]"
+                      dataType="i4"
+                      name="Academy_key" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Student_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Room_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Event_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Time_Code" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DWH_Fact_Academy\DW Fact_Academy.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\DW Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\DW Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\DW Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DWH_Fact_Academy\New Records?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="New Records?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Fact_Academy]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Fact_Academy]) [refTable]
+where [refTable].[Student_Id] = ? and [refTable].[Room_Id] = ? and [refTable].[Event_Id] = ? and [refTable].[Level_Id] = ? and [refTable].[Time_Code] = ? and [refTable].[RegistrationFees] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Academy_key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Student_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Room_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Event_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Level_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Time_Code" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RegistrationFees" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Student_Id]};#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Room_Id]};#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Event_Id]};#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Level_Id]};#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Time_Code]};#{Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[RegistrationFees]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DWH_Fact_Academy\New Records?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[Student_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Student_Id"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Student_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Student_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[Room_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Room_Id"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Room_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Room_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[Event_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Event_Id"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Event_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Event_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Level_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Level_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[Time_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Time_Code"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Time_Code]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Time_Code</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input].Columns[RegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationFees"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[RegistrationFees]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RegistrationFees</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DWH_Fact_Academy\STG_Fact_Academy"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="STG_Fact_Academy"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Fact_Academy]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[stg_Academy_key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[stg_Academy_key]"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[stg_Academy_key]"
+                      name="stg_Academy_key"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Student_Id]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Student_Id]"
+                      name="Student_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Room_Id]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Room_Id]"
+                      name="Room_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Event_Id]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Event_Id]"
+                      name="Event_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      name="Level_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Time_Code]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[Time_Code]"
+                      name="Time_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      name="RegistrationFees"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[stg_Academy_key]"
+                      dataType="i4"
+                      name="stg_Academy_key" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Student_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Room_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Event_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Time_Code" />
+                    <externalMetadataColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[stg_Academy_key]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[stg_Academy_key]"
+                      name="stg_Academy_key" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Student_Id]"
+                      name="Student_Id" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Room_Id]"
+                      name="Room_Id" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Event_Id]"
+                      name="Event_Id" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      name="Level_Id" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[Time_Code]"
+                      name="Time_Code" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      name="RegistrationFees" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DWH_Fact_Academy.Paths[Lookup No Match Output]"
+              endId="Package\DWH_Fact_Academy\DW Fact_Academy.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\DWH_Fact_Academy\New Records?.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\DWH_Fact_Academy.Paths[OLE DB Source Output]"
+              endId="Package\DWH_Fact_Academy\New Records?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\DWH_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SRG_Fact_Academy"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E28F2952-736E-4579-903C-EA01064F4636}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SRG_Fact_Academy"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\SRG_Fact_Academy\DB Source fact 1"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="DB Source fact 1"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[db_Fact_Academy]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\DB Source fact 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[db_Academy_key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[db_Academy_key]"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[db_Academy_key]"
+                      name="db_Academy_key"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Student_Id]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Student_Id]"
+                      name="Student_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Room_Id]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Room_Id]"
+                      name="Room_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Event_Id]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Event_Id]"
+                      name="Event_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      name="Level_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Time_Code]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Time_Code]"
+                      name="Time_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      name="RegistrationFees"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[db_Academy_key]"
+                      dataType="i4"
+                      name="db_Academy_key" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Student_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Room_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Event_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Time_Code" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[db_Academy_key]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[db_Academy_key]"
+                      name="db_Academy_key" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Student_Id]"
+                      name="Student_Id" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Room_Id]"
+                      name="Room_Id" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Event_Id]"
+                      name="Event_Id" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      name="Level_Id" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[Time_Code]"
+                      name="Time_Code" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      name="RegistrationFees" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SRG_Fact_Academy\get event information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get event information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Event]) [refTable]
+where [refTable].[EventId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EventId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="EventName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MaximumLimit" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Event_Id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\get event information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input].Columns[Event_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Event_Id"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Event_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">EventId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Match Output].Columns[lkpEventId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Match Output].Columns[lkpEventId]"
+                      name="lkpEventId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EventId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SRG_Fact_Academy\get room information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get room information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Room]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Room]) [refTable]
+where [refTable].[RoomId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="RoomId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RoomName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Room_Id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\get room information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input].Columns[Room_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Room_Id"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Room_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RoomId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Match Output].Columns[lkpRoomId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Match Output].Columns[lkpRoomId]"
+                      name="lkpRoomId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RoomId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SRG_Fact_Academy\get student information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get student information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Student]) [refTable]
+where [refTable].[StudentId] = ? and [refTable].[LevelId] = ? and [refTable].[RegistrationFees] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ContactNumber" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Email" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LevelId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AverageGrade" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RegistrationFees" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Student_Id]};#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Level_Id]};#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[RegistrationFees]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\get student information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input].Columns[Student_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Student_Id"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Student_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">StudentId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Level_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LevelId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input].Columns[RegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationFees"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[RegistrationFees]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RegistrationFees</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpStudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpStudentId]"
+                      name="lkpStudentId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">StudentId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpLevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpLevelId]"
+                      name="lkpLevelId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">LevelId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpRegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpRegistrationFees]"
+                      name="lkpRegistrationFees"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RegistrationFees</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SRG_Fact_Academy\get time information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get time information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Time]) [refTable]
+where [refTable].[TimeCode] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TimeCode" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Date" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Dayy" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Monthh" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AcademicYear" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="semester" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Time_Code]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\get time information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input].Columns[Time_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Time_Code"
+                      lineageId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output].Columns[Time_Code]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">TimeCode</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Match Output].Columns[lkpTimeCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Match Output].Columns[lkpTimeCode]"
+                      name="lkpTimeCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">TimeCode</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SRG_Fact_Academy\STG_Fact_Academy"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="STG_Fact_Academy"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Fact_Academy]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpStudentId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpStudentId"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Student_Id]"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpStudentId]" />
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpRoomId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpRoomId"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Room_Id]"
+                      lineageId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Match Output].Columns[lkpRoomId]" />
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpEventId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpEventId"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Event_Id]"
+                      lineageId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Match Output].Columns[lkpEventId]" />
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpLevelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpLevelId"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpLevelId]" />
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpTimeCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpTimeCode"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Time_Code]"
+                      lineageId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Match Output].Columns[lkpTimeCode]" />
+                    <inputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].Columns[lkpRegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpRegistrationFees"
+                      externalMetadataColumnId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      lineageId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output].Columns[lkpRegistrationFees]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[stg_Academy_key]"
+                      dataType="i4"
+                      name="stg_Academy_key" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Student_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Student_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Room_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Room_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Event_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Event_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[Time_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Time_Code" />
+                    <externalMetadataColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SRG_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SRG_Fact_Academy\STG_Fact_Academy.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\SRG_Fact_Academy.Paths[Lookup Match Output]"
+              endId="Package\SRG_Fact_Academy\get room information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\SRG_Fact_Academy\get student information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\SRG_Fact_Academy.Paths[Lookup Match Output1]"
+              endId="Package\SRG_Fact_Academy\get event information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\SRG_Fact_Academy\get room information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\SRG_Fact_Academy.Paths[Lookup Match Output2]"
+              endId="Package\SRG_Fact_Academy\get time information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\SRG_Fact_Academy\get event information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\SRG_Fact_Academy.Paths[Lookup Match Output3]"
+              endId="Package\SRG_Fact_Academy\STG_Fact_Academy.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\SRG_Fact_Academy\get time information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\SRG_Fact_Academy.Paths[OLE DB Source Output]"
+              endId="Package\SRG_Fact_Academy\get student information.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\SRG_Fact_Academy\DB Source fact 1.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Trancate STG Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{F5E5C84B-C372-4815-A4CA-FD2F63A60BFF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Trancate STG Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A21EDBF-BADB-45E4-A9EC-B243B8F4D962}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE STG_Fact_Academy;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F621A75A-BDDD-4627-9C1D-34F7DA16F29D}"
+      DTS:From="Package\Trancate STG Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\SRG_Fact_Academy" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1CD77F19-C607-43B1-9B50-FAC0CC27D66B}"
+      DTS:From="Package\SRG_Fact_Academy"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\DWH_Fact_Academy" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\DWH_Fact_Academy"
+          TopLeft="290.500003831727,222.264708080919" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\SRG_Fact_Academy"
+          TopLeft="286.928575710375,125.735295383163" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Trancate STG Table"
+          TopLeft="286.928576221271,15.4411766100095" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="372.728575965823,57.0411766100095">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.6941187731535"
+              Start="0,0"
+              End="0,61.1941187731535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.1941187731535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="375.914289771051,167.335295383163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.929412697756"
+              Start="0,0"
+              End="0,47.429412697756">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.429412697756" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DWH_Fact_Academy">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144.8,41.6"
+          Id="Package\DWH_Fact_Academy\New Records?"
+          TopLeft="329.5,124.5" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\DWH_Fact_Academy\DW Fact_Academy"
+          TopLeft="316.5,234.5" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\DWH_Fact_Academy\STG_Fact_Academy"
+          TopLeft="313.5,31.5" />
+        <EdgeLayout
+          Id="Package\DWH_Fact_Academy.Paths[OLE DB Source Output]"
+          TopLeft="400.7,73.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.4"
+              Start="0,0"
+              End="0,43.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DWH_Fact_Academy.Paths[Lookup No Match Output]"
+          TopLeft="400.8,166.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.4000000000001"
+              Start="0,0"
+              End="0,60.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,24.6453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DWH_Fact_Academy\New Records?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Fact_Academy]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DWH_Fact_Academy\DW Fact_Academy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DWH_Fact_Academy\STG_Fact_Academy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\SRG_Fact_Academy">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\SRG_Fact_Academy\get room information"
+          TopLeft="269.785716742885,143.852941433864" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\SRG_Fact_Academy\STG_Fact_Academy"
+          TopLeft="278.357147503872,371.735296112443" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\SRG_Fact_Academy\get time information"
+          TopLeft="274.071433145173,291.002446280962" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\SRG_Fact_Academy\get student information"
+          TopLeft="263.357145715733,76.3823526730588" />
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\SRG_Fact_Academy\DB Source fact 1"
+          TopLeft="276.928575029179,11.9705874845643" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\SRG_Fact_Academy\get event information"
+          TopLeft="271.928573411338,217.44117733929" />
+        <EdgeLayout
+          Id="Package\SRG_Fact_Academy.Paths[OLE DB Source Output]"
+          TopLeft="356.742860372456,53.5705874845643">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.8117651884944"
+              Start="0,0"
+              End="0,15.3117651884944">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.3117651884944" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SRG_Fact_Academy.Paths[Lookup Match Output3]"
+          TopLeft="362.814290324523,332.602446280962">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.1328498314809"
+              Start="0,0"
+              End="0,31.6328498314809">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6328498314809" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.0117374157404,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SRG_Fact_Academy.Paths[Lookup Match Output2]"
+          TopLeft="361.600003278255,259.04117733929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.9612689416726"
+              Start="0,0"
+              End="0,24.4612689416726">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.4612689416726" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.42594697083629,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SRG_Fact_Academy.Paths[Lookup Match Output1]"
+          TopLeft="360.457145077112,185.452941433864">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.9882359054262"
+              Start="0,0"
+              End="0,24.4882359054262">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.4882359054262" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.43943045271311,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SRG_Fact_Academy.Paths[Lookup Match Output]"
+          TopLeft="358.371431229309,117.982352673059">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.8705887608049"
+              Start="0,0"
+              End="0,18.3705887608049">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.3705887608049" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,3.38060688040244,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\get room information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Room]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\STG_Fact_Academy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\get time information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Time]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\get student information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Student]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\DB Source fact 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRG_Fact_Academy\get event information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Event]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

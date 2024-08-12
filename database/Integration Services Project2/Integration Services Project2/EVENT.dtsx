@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/6/2023 11:06:50 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3N7G04Q"
+  DTS:CreatorName="DESKTOP-3N7G04Q\habib"
+  DTS:DTSID="{1D7BDEE3-B215-4C06-BC37-55A65774D674}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{450EFBCC-9981-4DF9-9E89-780AC5B9A9A4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DA24EC01-4611-4C6D-96FF-D717070BFC82}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{DA24EC01-4611-4C6D-96FF-D717070BFC82}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BF672E67-4DF8-4B6D-BA2F-463D161547FD}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{BF672E67-4DF8-4B6D-BA2F-463D161547FD}DESKTOP-3N7G04Q.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B5EC07BA-77FA-4E66-8A17-C13C2EC659BE}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B5EC07BA-77FA-4E66-8A17-C13C2EC659BE}DESKTOP-3N7G04Q.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{997B7F9C-0F2C-4D05-8DDE-64795F885854}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{997B7F9C-0F2C-4D05-8DDE-64795F885854}DESKTOP-3N7G04Q.SA.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D624F245-FB6D-4832-8F4F-572A1AA5F537}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{D624F245-FB6D-4832-8F4F-572A1AA5F537}DESKTOP-DF4A9BU.database1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2F47028F-63B4-4CBB-9F46-B1399FD3DEA9}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{2F47028F-63B4-4CBB-9F46-B1399FD3DEA9}DESKTOP-DF4A9BU.database1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B98E74FE-A433-4543-875A-571AE637B2FB}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B98E74FE-A433-4543-875A-571AE637B2FB}DESKTOP-DF4A9BU.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{166826C8-18E9-4ED2-A9F8-73EFC099A3C4}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{166826C8-18E9-4ED2-A9F8-73EFC099A3C4}DESKTOP-DF4A9BU.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6F4401B4-DE52-4103-871F-C97C03D2A317}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{6F4401B4-DE52-4103-871F-C97C03D2A317}DESKTOP-DF4A9BU.SA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EA482A5F-DE16-4CFE-BF34-9C884F95912E}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{EA482A5F-DE16-4CFE-BF34-9C884F95912E}DESKTOP-DF4A9BU.SA 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A030C1B6-E6D5-4F56-8D03-972C175943D7}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{A030C1B6-E6D5-4F56-8D03-972C175943D7}DESKTOP-DF4A9BU.SA 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load_DIM_Event"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{31FCB013-3C11-417C-8E51-749CD2F44ADA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_DIM_Event"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_DIM_Event\DWH_EVENT"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DWH_EVENT"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIM_Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Event\DWH_EVENT.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].Columns[EventId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="EventId"
+                      externalMetadataColumnId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[EventId]"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventId]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].Columns[EventName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="EventName"
+                      externalMetadataColumnId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[EventName]"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventName]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].Columns[MaximumLimit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MaximumLimit"
+                      externalMetadataColumnId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[MaximumLimit]"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[MaximumLimit]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input].ExternalColumns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MaximumLimit" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Event\DWH_EVENT.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\DWH_EVENT.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\DWH_EVENT.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\DWH_EVENT.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Event\NEW RECORD?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="NEW RECORD?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_Event]) [refTable]
+where [refTable].[EventId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EventId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="EventName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MaximumLimit" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Event\NEW RECORD?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input].Columns[EventId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="EventId"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">EventId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Event\STG_EVENT"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="STG_EVENT"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Event\STG_EVENT.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[EventId]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventId]"
+                      name="EventId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[EventName]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[EventName]"
+                      name="EventName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[MaximumLimit]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].Columns[MaximumLimit]"
+                      name="MaximumLimit"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output].ExternalColumns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MaximumLimit" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[EventId]"
+                      name="EventId" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[EventName]"
+                      name="EventName" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[MaximumLimit]"
+                      name="MaximumLimit" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_DIM_Event.Paths[Lookup No Match Output]"
+              endId="Package\Load_DIM_Event\DWH_EVENT.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Load_DIM_Event\NEW RECORD?.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Load_DIM_Event.Paths[OLE DB Source Output]"
+              endId="Package\Load_DIM_Event\NEW RECORD?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_DIM_Event\STG_EVENT.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load_STG_Event"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{21241B4C-AE88-497A-B30E-E1E949F4C0F2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_STG_Event"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_STG_Event\DB_Event"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="DB_Event"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Event\DB_Event.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[EventId]"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventId]"
+                      name="EventId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[EventName]"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventName]"
+                      name="EventName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[MaximumLimit]"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[MaximumLimit]"
+                      name="MaximumLimit"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].ExternalColumns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MaximumLimit" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[EventId]"
+                      name="EventId" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[EventName]"
+                      name="EventName" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[MaximumLimit]"
+                      name="MaximumLimit" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Event\STG_Event"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="STG_Event"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Event]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Event\STG_Event.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].Columns[EventId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="EventId"
+                      externalMetadataColumnId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[EventId]"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventId]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].Columns[EventName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="EventName"
+                      externalMetadataColumnId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[EventName]"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[EventName]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].Columns[MaximumLimit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MaximumLimit"
+                      externalMetadataColumnId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[MaximumLimit]"
+                      lineageId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output].Columns[MaximumLimit]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[EventId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[EventName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EventName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input].ExternalColumns[MaximumLimit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MaximumLimit" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Event\STG_Event.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Event\STG_Event.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Event\STG_Event.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Event\STG_Event.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Event\STG_Event.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_STG_Event.Paths[OLE DB Source Output]"
+              endId="Package\Load_STG_Event\STG_Event.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_STG_Event\DB_Event.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate STG Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{46656D96-8C51-461C-8310-FE1D5E340BD8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate STG Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6F4401B4-DE52-4103-871F-C97C03D2A317}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE STG_Event;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{60A22E2A-4857-404B-AFFD-84FEA19C2517}"
+      DTS:From="Package\truncate STG Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load_STG_Event" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{DD780755-8A47-474F-B573-13661602EE34}"
+      DTS:From="Package\Load_STG_Event"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load_DIM_Event" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Load_DIM_Event"
+          TopLeft="64.7857142735501,174.088236817027" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Load_STG_Event"
+          TopLeft="61.9285718786473,96.6764714462122" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\truncate STG Table"
+          TopLeft="71.2142868333934,8.55882357231061" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="155.614286833393,50.1588235723106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.4857149547461,46.5176478739016"
+              Start="0,0"
+              End="-14.4857149547461,39.0176478739016">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.2588239369508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.2588239369508"
+                    Point2="0,23.2588239369508"
+                    Point3="-4,23.2588239369508" />
+                  <mssgle:LineSegment
+                    End="-10.4857149547461,23.2588239369508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.4857149547461,23.2588239369508"
+                    Point2="-14.4857149547461,23.2588239369508"
+                    Point3="-14.4857149547461,27.2588239369508" />
+                  <mssgle:LineSegment
+                    End="-14.4857149547461,39.0176478739016" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="142.557143076099,138.276471446212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.8117653708144"
+              Start="0,0"
+              End="0,28.3117653708144">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3117653708144" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load_DIM_Event">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="135.2,41.6"
+          Id="Package\Load_DIM_Event\STG_EVENT"
+          TopLeft="320,54" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load_DIM_Event\NEW RECORD?"
+          TopLeft="320,172" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Load_DIM_Event\DWH_EVENT"
+          TopLeft="328,295" />
+        <EdgeLayout
+          Id="Package\Load_DIM_Event.Paths[OLE DB Source Output]"
+          TopLeft="391.2,95.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,76.4"
+              Start="0,0"
+              End="0,68.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_DIM_Event.Paths[Lookup No Match Output]"
+          TopLeft="396.4,213.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81.4"
+              Start="0,0"
+              End="0,73.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,31.1453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Event\STG_EVENT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Event\NEW RECORD?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_Event]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Event\DWH_EVENT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load_STG_Event">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Load_STG_Event\STG_Event"
+          TopLeft="209.785717253782,124.970589490085" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Load_STG_Event\DB_Event"
+          TopLeft="224.071432293678,7.02941178615531" />
+        <EdgeLayout
+          Id="Package\Load_STG_Event.Paths[OLE DB Source Output]"
+          TopLeft="286.071432293678,48.6294117861553">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.4857150398956,76.3411777039301"
+              Start="0,0"
+              End="-11.4857150398956,68.8411777039301">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.170588851965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.170588851965"
+                    Point2="0,38.170588851965"
+                    Point3="-4,38.170588851965" />
+                  <mssgle:LineSegment
+                    End="-7.48571503989564,38.170588851965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.48571503989564,38.170588851965"
+                    Point2="-11.4857150398956,38.170588851965"
+                    Point3="-11.4857150398956,42.170588851965" />
+                  <mssgle:LineSegment
+                    End="-11.4857150398956,68.8411777039301" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Event\DB_Event">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Event\STG_Event">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

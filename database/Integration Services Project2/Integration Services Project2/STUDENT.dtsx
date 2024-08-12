@@ -1,0 +1,2239 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/6/2023 11:07:40 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3N7G04Q"
+  DTS:CreatorName="DESKTOP-3N7G04Q\habib"
+  DTS:DTSID="{969D68D1-4FC1-4577-97A8-BF383CDBF7AE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{3E719D24-8DEC-42CD-B995-0A7A9CBC4560}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7D433290-9252-45A8-B17D-4616117D2BBE}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{7D433290-9252-45A8-B17D-4616117D2BBE}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{085BD017-FE08-40F9-9E6E-072AA8A01827}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{085BD017-FE08-40F9-9E6E-072AA8A01827}DESKTOP-3N7G04Q.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0EE96605-B8D7-4AB8-A0B0-724D73A26CB9}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{0EE96605-B8D7-4AB8-A0B0-724D73A26CB9}DESKTOP-3N7G04Q.SA.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{27B056C1-68BF-4DE3-8C2D-FB8151F18CB4}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{27B056C1-68BF-4DE3-8C2D-FB8151F18CB4}DESKTOP-DF4A9BU.database1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2C1FB71F-6A24-40EB-8E5B-E2FC6DC6CDDB}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{2C1FB71F-6A24-40EB-8E5B-E2FC6DC6CDDB}DESKTOP-DF4A9BU.database1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B490419A-5BBD-418B-9F08-86049615FEB2}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B490419A-5BBD-418B-9F08-86049615FEB2}DESKTOP-DF4A9BU.database1 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{97303B6F-09E3-405F-BAA2-4603549245A1}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{97303B6F-09E3-405F-BAA2-4603549245A1}DESKTOP-DF4A9BU.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D1A92CF6-DEE9-483C-A0AB-23E1CBD420DD}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{D1A92CF6-DEE9-483C-A0AB-23E1CBD420DD}DESKTOP-DF4A9BU.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2E8B0B17-4F34-4364-B49C-4AC63644FD82}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{2E8B0B17-4F34-4364-B49C-4AC63644FD82}DESKTOP-DF4A9BU.SA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9484DF93-8810-414C-A12D-635D00B6CC6D}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{9484DF93-8810-414C-A12D-635D00B6CC6D}DESKTOP-DF4A9BU.SA 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{04EE3630-7C44-498C-9748-D37E43F4D890}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{04EE3630-7C44-498C-9748-D37E43F4D890}DESKTOP-DF4A9BU.SA 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load_DIM_Student"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4D27E290-FE0C-4332-9963-EFFB25994885}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_DIM_Student"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_DIM_Student\DWH_STUDENT"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DWH_STUDENT"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIM_Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Student\DWH_STUDENT.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[StudentId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="StudentId"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[StudentId]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentId]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[StudentName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="StudentName"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[StudentName]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentName]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[ContactNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="ContactNumber"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[ContactNumber]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[ContactNumber]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[LevelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LevelId"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[LevelId]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[LevelId]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[CourseId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="CourseId"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[CourseId]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[Leveln]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Leveln"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Leveln]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Leveln]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[Course]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Course"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Course]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Course]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[AverageGrade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AverageGrade"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[AverageGrade]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[AverageGrade]" />
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].Columns[RegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationFees"
+                      externalMetadataColumnId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[RegistrationFees]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="ContactNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LevelId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Leveln]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Leveln" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[Course]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AverageGrade" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Student\DWH_STUDENT.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\DWH_STUDENT.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\DWH_STUDENT.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\DWH_STUDENT.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Student\new record?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="new record?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_Student]) [refTable]
+where [refTable].[StudentId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ContactNumber" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Email" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LevelId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Leveln" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Course" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AverageGrade" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RegistrationFees" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Student\new record?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input].Columns[StudentId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="StudentId"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">StudentId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Student\new record?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Student\new record?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_DIM_Student\new record?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\new record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\new record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\new record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\new record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_DIM_Student\STG_STUDENT"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="STG_STUDENT"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_DIM_Student\STG_STUDENT.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[StudentId]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentId]"
+                      name="StudentId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[StudentName]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[StudentName]"
+                      name="StudentName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[ContactNumber]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[ContactNumber]"
+                      name="ContactNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[LevelId]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[LevelId]"
+                      name="LevelId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      name="CourseId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Leveln]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Leveln]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Leveln]"
+                      name="Leveln"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Course]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Course]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[Course]"
+                      name="Course"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[AverageGrade]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[AverageGrade]"
+                      name="AverageGrade"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      name="RegistrationFees"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="ContactNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LevelId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Leveln]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Leveln" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[Course]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AverageGrade" />
+                    <externalMetadataColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[StudentId]"
+                      name="StudentId" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[StudentName]"
+                      name="StudentName" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ContactNumber]"
+                      name="ContactNumber" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[LevelId]"
+                      name="LevelId" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      name="CourseId" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Leveln]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Leveln]"
+                      name="Leveln" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Course]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[Course]"
+                      name="Course" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[AverageGrade]"
+                      name="AverageGrade" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      name="RegistrationFees" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_DIM_Student.Paths[Lookup No Match Output]"
+              endId="Package\Load_DIM_Student\DWH_STUDENT.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Load_DIM_Student\new record?.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Load_DIM_Student.Paths[OLE DB Source Output]"
+              endId="Package\Load_DIM_Student\new record?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_DIM_Student\STG_STUDENT.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load_STG_Student"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{DC4B321C-68E1-430A-B19B-9E7465A5642A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load_STG_Student"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load_STG_Student\DB_Student"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="DB_Student"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Student\DB_Student.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[StudentId]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentId]"
+                      name="StudentId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[StudentName]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentName]"
+                      name="StudentName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[ContactNumber]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[ContactNumber]"
+                      name="ContactNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[LevelId]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[LevelId]"
+                      name="LevelId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      name="CourseId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[AverageGrade]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[AverageGrade]"
+                      name="AverageGrade"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[RegistrationFees]"
+                      name="RegistrationFees"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="ContactNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LevelId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AverageGrade" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[StudentId]"
+                      name="StudentId" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[StudentName]"
+                      name="StudentName" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ContactNumber]"
+                      name="ContactNumber" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[LevelId]"
+                      name="LevelId" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      name="CourseId" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[AverageGrade]"
+                      name="AverageGrade" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[RegistrationFees]"
+                      name="RegistrationFees" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Student\Get course information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Get course information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Course]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Course]) [refTable]
+where [refTable].[CourseId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CourseId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseTime" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[CourseId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Student\Get course information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input].Columns[CourseId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="CourseId"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[CourseId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">CourseId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Student\Get course information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get course information.Outputs[Lookup Match Output].Columns[LKP_NAME_Course]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\Get course information.Outputs[Lookup Match Output].Columns[LKP_NAME_Course]"
+                      name="LKP_NAME_Course"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">CourseName</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Student\Get course information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Student\Get course information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get course information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\Get course information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get course information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\Get course information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Student\Get level information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Get level information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Level]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Level]) [refTable]
+where [refTable].[LevelId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LevelId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LevelDescribtion" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[LevelId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Student\Get level information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input].Columns[LevelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LevelId"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[LevelId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LevelId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Student\Get level information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get level information.Outputs[Lookup Match Output].Columns[LKP_DESCR_Level]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\Load_STG_Student\Get level information.Outputs[Lookup Match Output].Columns[LKP_DESCR_Level]"
+                      name="LKP_DESCR_Level"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">LevelDescribtion</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Student\Get level information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_STG_Student\Get level information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get level information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\Get level information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\Get level information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\Get level information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_STG_Student\STG_student"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="STG_student"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Student]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_STG_Student\STG_student.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[StudentId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="StudentId"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[StudentId]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentId]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[StudentName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="StudentName"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[StudentName]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[StudentName]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[ContactNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="ContactNumber"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[ContactNumber]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[ContactNumber]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[LevelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LevelId"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[LevelId]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[LevelId]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[CourseId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="CourseId"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[CourseId]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[AverageGrade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AverageGrade"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[AverageGrade]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[AverageGrade]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[RegistrationFees]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationFees"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      lineageId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output].Columns[RegistrationFees]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[LKP_DESCR_Level]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LKP_DESCR_Level"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Leveln]"
+                      lineageId="Package\Load_STG_Student\Get level information.Outputs[Lookup Match Output].Columns[LKP_DESCR_Level]" />
+                    <inputColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].Columns[LKP_NAME_Course]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LKP_NAME_Course"
+                      externalMetadataColumnId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Course]"
+                      lineageId="Package\Load_STG_Student\Get course information.Outputs[Lookup Match Output].Columns[LKP_NAME_Course]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[StudentId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="StudentName" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[ContactNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="ContactNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[LevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LevelId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Leveln]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Leveln" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[Course]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[AverageGrade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AverageGrade" />
+                    <externalMetadataColumn
+                      refId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationFees]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationFees" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_STG_Student\STG_student.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_STG_Student\STG_student.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\STG_student.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_STG_Student\STG_student.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_STG_Student\STG_student.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load_STG_Student.Paths[Lookup Match Output]"
+              endId="Package\Load_STG_Student\Get course information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_STG_Student\Get level information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_STG_Student.Paths[Lookup Match Output1]"
+              endId="Package\Load_STG_Student\STG_student.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_STG_Student\Get course information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_STG_Student.Paths[OLE DB Source Output]"
+              endId="Package\Load_STG_Student\Get level information.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load_STG_Student\DB_Student.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\trancute STG table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{47655391-6559-4090-950F-E0EA4E5E5865}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="trancute STG table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2E8B0B17-4F34-4364-B49C-4AC63644FD82}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE STG_Student;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{15685A76-A6B3-45FF-90AC-FC676ACF871D}"
+      DTS:From="Package\trancute STG table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load_STG_Student" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{176F4E19-A411-4D10-A59A-6348E2A7047C}"
+      DTS:From="Package\Load_STG_Student"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load_DIM_Student" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Load_DIM_Student"
+          TopLeft="296.928575369777,239.088237728627" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Load_STG_Student"
+          TopLeft="310.500004683222,164.735295930123" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\trancute STG table"
+          TopLeft="296.214290665121,63.6176478739016" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="379.414290665121,105.217647873902">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.4857140181016,59.5176480562217"
+              Start="0,0"
+              End="15.4857140181016,52.0176480562217">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.7588240281109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.7588240281109"
+                    Point2="0,29.7588240281109"
+                    Point3="4,29.7588240281109" />
+                  <mssgle:LineSegment
+                    End="11.4857140181016,29.7588240281109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.4857140181016,29.7588240281109"
+                    Point2="15.4857140181016,29.7588240281109"
+                    Point3="15.4857140181016,33.7588240281109" />
+                  <mssgle:LineSegment
+                    End="15.4857140181016,52.0176480562217" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="394.900004683222,206.335295930123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.5714293134456,32.7529417985038"
+              Start="0,0"
+              End="-13.5714293134456,25.2529417985038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.3764708992519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.3764708992519"
+                    Point2="0,16.3764708992519"
+                    Point3="-4,16.3764708992519" />
+                  <mssgle:LineSegment
+                    End="-9.57142931344561,16.3764708992519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.57142931344561,16.3764708992519"
+                    Point2="-13.5714293134456,16.3764708992519"
+                    Point3="-13.5714293134456,20.3764708992519" />
+                  <mssgle:LineSegment
+                    End="-13.5714293134456,25.2529417985038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load_DIM_Student">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load_DIM_Student\STG_STUDENT"
+          TopLeft="267,18" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Load_DIM_Student\new record?"
+          TopLeft="289,134" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Load_DIM_Student\DWH_STUDENT"
+          TopLeft="291,259" />
+        <EdgeLayout
+          Id="Package\Load_DIM_Student.Paths[OLE DB Source Output]"
+          TopLeft="341.8,59.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.2000000000001,74.4"
+              Start="0,0"
+              End="15.2000000000001,66.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.2"
+                    Point2="0,37.2"
+                    Point3="4,37.2" />
+                  <mssgle:LineSegment
+                    End="11.2000000000001,37.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.2000000000001,37.2"
+                    Point2="15.2000000000001,37.2"
+                    Point3="15.2000000000001,41.2" />
+                  <mssgle:LineSegment
+                    End="15.2000000000001,66.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_DIM_Student.Paths[Lookup No Match Output]"
+          TopLeft="357,175.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.1999999999999,83.4"
+              Start="0,0"
+              End="11.1999999999999,75.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.7"
+                    Point2="0,41.7"
+                    Point3="4,41.7" />
+                  <mssgle:LineSegment
+                    End="7.19999999999987,41.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.19999999999987,41.7"
+                    Point2="11.1999999999999,41.7"
+                    Point3="11.1999999999999,45.7" />
+                  <mssgle:LineSegment
+                    End="11.1999999999999,75.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-50.2063867187501,46.7,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Student\STG_STUDENT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Student\new record?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_Student]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_DIM_Student\DWH_STUDENT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load_STG_Student">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="185.6,41.6"
+          Id="Package\Load_STG_Student\Get course information"
+          TopLeft="284.071431782781,175.029412880076" />
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\Load_STG_Student\Get level information"
+          TopLeft="287.642860925928,102.205882867727" />
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\Load_STG_Student\DB_Student"
+          TopLeft="279.071433230322,36.0882357231061" />
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\Load_STG_Student\STG_student"
+          TopLeft="264.785718190427,257.405885420209" />
+        <EdgeLayout
+          Id="Package\Load_STG_Student.Paths[OLE DB Source Output]"
+          TopLeft="346.271433230322,77.6882357231061">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.7714276956053,24.5176471446212"
+              Start="0,0"
+              End="29.7714276956053,17.0176471446212">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.2588235723106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.2588235723106"
+                    Point2="0,12.2588235723106"
+                    Point3="4,12.2588235723106" />
+                  <mssgle:LineSegment
+                    End="25.7714276956053,12.2588235723106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.7714276956053,12.2588235723106"
+                    Point2="29.7714276956053,12.2588235723106"
+                    Point3="29.7714276956053,16.2588235723106" />
+                  <mssgle:LineSegment
+                    End="29.7714276956053,17.0176471446212" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_STG_Student.Paths[Lookup Match Output1]"
+          TopLeft="376.871431782781,216.629412880076">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-42.4857135923542,40.7764725401326"
+              Start="0,0"
+              End="-42.4857135923542,33.2764725401326">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3882362700663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3882362700663"
+                    Point2="0,20.3882362700663"
+                    Point3="-4,20.3882362700663" />
+                  <mssgle:LineSegment
+                    End="-38.4857135923542,20.3882362700663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-38.4857135923542,20.3882362700663"
+                    Point2="-42.4857135923542,20.3882362700663"
+                    Point3="-42.4857135923542,24.3882362700663" />
+                  <mssgle:LineSegment
+                    End="-42.4857135923542,33.2764725401326" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-69.4342435149271,25.3882362700663,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_STG_Student.Paths[Lookup Match Output]"
+          TopLeft="376.457146354354,143.805882867727">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.2235300123486"
+              Start="0,0"
+              End="0,23.7235300123486">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.7235300123486" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.05707750617428,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Student\Get course information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Course]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Student\Get level information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Level]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Student\DB_Student">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_STG_Student\STG_student">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

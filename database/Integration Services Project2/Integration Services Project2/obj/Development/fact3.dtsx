@@ -1,0 +1,2598 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/6/2023 5:31:50 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3N7G04Q"
+  DTS:CreatorName="DESKTOP-3N7G04Q\habib"
+  DTS:DTSID="{900A1081-517D-4A70-9117-AB5B83692BE4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{97E69A9A-230E-4ED0-9527-090AD846BEFB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DataSchoolFinally.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E58E0B6A-09CF-4094-A64C-4E1E7129671F}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DataSchoolFinally.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DataSchoolFinally.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E58E0B6A-09CF-4094-A64C-4E1E7129671F}DESKTOP-3N7G04Q.DataSchoolFinally.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{12DC8AFD-A4B3-4AA8-9B8F-E0274D1F067D}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{12DC8AFD-A4B3-4AA8-9B8F-E0274D1F067D}DESKTOP-3N7G04Q.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3N7G04Q.SA.bacpac]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E229591F-A7D4-44F6-8A3E-C8C2ED6D352B}"
+      DTS:ObjectName="DESKTOP-3N7G04Q.SA.bacpac">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3N7G04Q;Initial Catalog=SA.bacpac;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E229591F-A7D4-44F6-8A3E-C8C2ED6D352B}DESKTOP-3N7G04Q.SA.bacpac;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{64691FC6-54A5-4E8F-8C58-F1F35B24D36D}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{64691FC6-54A5-4E8F-8C58-F1F35B24D36D}DESKTOP-DF4A9BU.database1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{069F313E-7733-4FF8-9A35-7BE470BBE583}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{069F313E-7733-4FF8-9A35-7BE470BBE583}DESKTOP-DF4A9BU.database1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A60480E7-40D9-42CB-BF10-C661F7D64959}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{A60480E7-40D9-42CB-BF10-C661F7D64959}DESKTOP-DF4A9BU.database1 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6750384A-246B-4A78-B176-AB574C56CD5F}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{6750384A-246B-4A78-B176-AB574C56CD5F}DESKTOP-DF4A9BU.database1 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B27FD9D9-1C62-412D-A3A5-1B159BD0888D}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B27FD9D9-1C62-412D-A3A5-1B159BD0888D}DESKTOP-DF4A9BU.database1 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{92E06FA0-5FAE-4EC2-AE83-5EA5765480BE}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.database1 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=database1;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{92E06FA0-5FAE-4EC2-AE83-5EA5765480BE}DESKTOP-DF4A9BU.database1 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5C197164-195F-4592-BFE3-EAB90EBF7F5D}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{5C197164-195F-4592-BFE3-EAB90EBF7F5D}DESKTOP-DF4A9BU.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E6B3D83E-3982-42C7-90AD-C86C65D5D771}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.DW 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{E6B3D83E-3982-42C7-90AD-C86C65D5D771}DESKTOP-DF4A9BU.DW 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0DE85B4F-8A7F-450C-8D08-26F11040E620}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{0DE85B4F-8A7F-450C-8D08-26F11040E620}DESKTOP-DF4A9BU.SA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F9FE310A-A7B5-4C09-82D3-6E329ADABF6D}"
+      DTS:ObjectName="DESKTOP-DF4A9BU.SA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DF4A9BU;Initial Catalog=SA;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{F9FE310A-A7B5-4C09-82D3-6E329ADABF6D}DESKTOP-DF4A9BU.SA 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{13D25A59-1FA2-4027-A5E4-5A0CD1579E32}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Downloads\Quiz_Files\Quiz_Files\1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B8FA87A0-7794-4275-B2E5-E4FE58C32D38}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Downloads\Quiz_Files\Quiz_Files\2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{33BF2EFF-0D55-45AD-B52B-5D517BF62F6B}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Downloads\Quiz_Files\Quiz_Files\3.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{384943D4-F19E-434A-9D98-629B6B3980B1}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Downloads\Quiz_Files\Quiz_Files\3.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{23753B22-3CA1-4166-9536-171882B60665}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\habib\Desktop\semester 2\fact 3\fact 3.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Fact_LecturerPerformance"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{FA4D7B9C-1708-4C50-AF58-9FF3D9385AF1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fact_LecturerPerformance"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Fact_LecturerPerformance"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Fact_LecturerPerformance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[Lecturer_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Lecturer_Id"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Lecturer_Id]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Lecturer_Id]" />
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[Course_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Course_Id"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Course_Id]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Course_Id]" />
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Level_Id]" />
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[Department_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Department_Id"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Department_Id]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Department_Id]" />
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[RegistrationCount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationCount"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationCount]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[RegistrationCount]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[LecturerPerformance_key]"
+                      dataType="i4"
+                      name="LecturerPerformance_key" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecturer_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Department_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationCount" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fact_LecturerPerformance\New Record?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="New Record?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Fact_LecturerPerformance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Fact_LecturerPerformance]) [refTable]
+where [refTable].[Lecturer_Id] = ? and [refTable].[Course_Id] = ? and [refTable].[Level_Id] = ? and [refTable].[Department_Id] = ? and [refTable].[RegistrationCount] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LecturerPerformance_key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Lecturer_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Course_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Level_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Department_Id" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RegistrationCount" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Lecturer_Id]};#{Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Course_Id]};#{Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Level_Id]};#{Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Department_Id]};#{Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[RegistrationCount]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fact_LecturerPerformance\New Record?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.DW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input].Columns[Lecturer_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Lecturer_Id"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Lecturer_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Lecturer_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input].Columns[Course_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Course_Id"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Course_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Course_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Level_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Level_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input].Columns[Department_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Department_Id"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Department_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Department_Id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input].Columns[RegistrationCount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationCount"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[RegistrationCount]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RegistrationCount</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="STG_Fact_LecturerPerformance"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[db_Fact_LecturerPerformance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 5]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[stg_LecturerPerformance_key]"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[stg_LecturerPerformance_key]"
+                      name="stg_LecturerPerformance_key"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Lecturer_Id]"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Lecturer_Id]"
+                      name="Lecturer_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Course_Id]"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Course_Id]"
+                      name="Course_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      name="Level_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Department_Id]"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[Department_Id]"
+                      name="Department_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[RegistrationCount]"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].Columns[RegistrationCount]"
+                      name="RegistrationCount"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      name="stg_LecturerPerformance_key" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecturer_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Department_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output].ExternalColumns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationCount" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[stg_LecturerPerformance_key]"
+                      name="stg_LecturerPerformance_key" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Lecturer_Id]"
+                      name="Lecturer_Id" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Course_Id]"
+                      name="Course_Id" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      name="Level_Id" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[Department_Id]"
+                      name="Department_Id" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[RegistrationCount]"
+                      name="RegistrationCount" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Fact_LecturerPerformance.Paths[Lookup No Match Output]"
+              endId="Package\Fact_LecturerPerformance\Fact_LecturerPerformance.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Fact_LecturerPerformance\New Record?.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Fact_LecturerPerformance.Paths[OLE DB Source Output]"
+              endId="Package\Fact_LecturerPerformance\New Record?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\STG_Fact_LecturerPerformance"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4C8A6BA6-4DE8-433F-A40E-5B57278440C2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="STG_Fact_LecturerPerformance">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="DB Sourse Fact3"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[db_Fact_LecturerPerformance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[stg_LecturerPerformance_key]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[stg_LecturerPerformance_key]"
+                      name="stg_LecturerPerformance_key"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Lecturer_Id]"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Lecturer_Id]"
+                      name="Lecturer_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Course_Id]"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Course_Id]"
+                      name="Course_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Level_Id]"
+                      name="Level_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Department_Id]"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Department_Id]"
+                      name="Department_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[RegistrationCount]"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[RegistrationCount]"
+                      name="RegistrationCount"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      name="stg_LecturerPerformance_key" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecturer_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Department_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].ExternalColumns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationCount" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[stg_LecturerPerformance_key]"
+                      name="stg_LecturerPerformance_key" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Lecturer_Id]"
+                      name="Lecturer_Id" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Course_Id]"
+                      name="Course_Id" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Level_Id]"
+                      name="Level_Id" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[Department_Id]"
+                      name="Department_Id" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[RegistrationCount]"
+                      name="RegistrationCount" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\get course information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get course information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Course]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Course]) [refTable]
+where [refTable].[CourseId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CourseId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CourseTime" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LectureId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Course_Id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\get course information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 2]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input].Columns[Course_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Course_Id"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Course_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">CourseId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Match Output].Columns[lkpCourseId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Match Output].Columns[lkpCourseId]"
+                      name="lkpCourseId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">CourseId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\get department information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get department information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Department]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Department]) [refTable]
+where [refTable].[DepartmentId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DepartmentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DepartmentName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="HeadOfDepartment" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProfessorId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Department_Id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\get department information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 4]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input].Columns[Department_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Department_Id"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Department_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">DepartmentId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Match Output].Columns[lkpDepartmentId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Match Output].Columns[lkpDepartmentId]"
+                      name="lkpDepartmentId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">DepartmentId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\get lecturer information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get lecturer information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Lecturer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Lecturer]) [refTable]
+where [refTable].[LecturerId] = ? and [refTable].[RegistrationCount] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LecturerId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LecturerName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LecturerEmail" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ContactNumber" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Salary" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProfessorId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RoomId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="RegistrationCount" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Lecturer_Id]};#{Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[RegistrationCount]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input].Columns[Lecturer_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Lecturer_Id"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Lecturer_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LecturerId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input].Columns[RegistrationCount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RegistrationCount"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[RegistrationCount]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RegistrationCount</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpLecturerId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpLecturerId]"
+                      name="lkpLecturerId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">LecturerId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpRegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpRegistrationCount]"
+                      name="lkpRegistrationCount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RegistrationCount</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\get level information"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="get level information"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Level]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Level]) [refTable]
+where [refTable].[LevelId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LevelId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LevelDescribtion" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="StudentId" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Level_Id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\get level information.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.database1 3]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input].Columns[Level_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Level_Id"
+                      lineageId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output].Columns[Level_Id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LevelId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Match Output].Columns[lkpLevelId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Match Output].Columns[lkpLevelId]"
+                      name="lkpLevelId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">LevelId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="STG_Fact_LecturerPerformance"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[STG_Fact_LecturerPerformance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DF4A9BU.SA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[lkpLecturerId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpLecturerId"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Lecturer_Id]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpLecturerId]" />
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[lkpCourseId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpCourseId"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Course_Id]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Match Output].Columns[lkpCourseId]" />
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[lkpLevelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpLevelId"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Match Output].Columns[lkpLevelId]" />
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[lkpDepartmentId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpDepartmentId"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Department_Id]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Match Output].Columns[lkpDepartmentId]" />
+                    <inputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].Columns[lkpRegistrationCount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="lkpRegistrationCount"
+                      externalMetadataColumnId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationCount]"
+                      lineageId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output].Columns[lkpRegistrationCount]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[stg_LecturerPerformance_key]"
+                      dataType="i4"
+                      name="stg_LecturerPerformance_key" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Lecturer_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lecturer_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Course_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Course_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Level_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Level_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[Department_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Department_Id" />
+                    <externalMetadataColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input].ExternalColumns[RegistrationCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RegistrationCount" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output]"
+              endId="Package\STG_Fact_LecturerPerformance\get course information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\STG_Fact_LecturerPerformance\get lecturer information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output1]"
+              endId="Package\STG_Fact_LecturerPerformance\get level information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\STG_Fact_LecturerPerformance\get course information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output2]"
+              endId="Package\STG_Fact_LecturerPerformance\get department information.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\STG_Fact_LecturerPerformance\get level information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output3]"
+              endId="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\STG_Fact_LecturerPerformance\get department information.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\STG_Fact_LecturerPerformance.Paths[OLE DB Source Output]"
+              endId="Package\STG_Fact_LecturerPerformance\get lecturer information.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Trancate STG Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D37CF4FB-825F-4FB0-BE64-D20B9F099436}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Trancate STG Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0DE85B4F-8A7F-450C-8D08-26F11040E620}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE STG_Fact_LecturerPerformance  ;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{042E1F1D-70D7-427A-9F82-1FC4C8A4499E}"
+      DTS:From="Package\Trancate STG Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\STG_Fact_LecturerPerformance" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{08FED09E-F715-4F5F-AB80-50176D2C7F51}"
+      DTS:From="Package\STG_Fact_LecturerPerformance"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Fact_LecturerPerformance" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="201.6,41.6"
+          Id="Package\Fact_LecturerPerformance"
+          TopLeft="124.071430079791,214.441178980171" />
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\STG_Fact_LecturerPerformance"
+          TopLeft="76.9285716231988,119.029412515436" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Trancate STG Table"
+          TopLeft="82.1428585417417,45.8823535846592" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="167.742858541742,87.4823535846592">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.7857130814572,31.5470589307765"
+              Start="0,0"
+              End="22.7857130814572,24.0470589307765">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.7735294653883" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.7735294653883"
+                    Point2="0,15.7735294653883"
+                    Point3="4,15.7735294653883" />
+                  <mssgle:LineSegment
+                    End="18.7857130814572,15.7735294653883" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.7857130814572,15.7735294653883"
+                    Point2="22.7857130814572,15.7735294653883"
+                    Point3="22.7857130814572,19.7735294653883" />
+                  <mssgle:LineSegment
+                    End="22.7857130814572,24.0470589307765" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="190.528571623199,160.629412515436">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.3428584565922,53.811766464735"
+              Start="0,0"
+              End="34.3428584565922,46.311766464735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9058832323675" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9058832323675"
+                    Point2="0,26.9058832323675"
+                    Point3="4,26.9058832323675" />
+                  <mssgle:LineSegment
+                    End="30.3428584565922,26.9058832323675" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.3428584565922,26.9058832323675"
+                    Point2="34.3428584565922,26.9058832323675"
+                    Point3="34.3428584565922,30.9058832323675" />
+                  <mssgle:LineSegment
+                    End="34.3428584565922,46.311766464735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Fact_LecturerPerformance">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance"
+          TopLeft="236.5,42.5" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Fact_LecturerPerformance\New Record?"
+          TopLeft="292.5,141.5" />
+        <NodeLayout
+          Size="201.6,41.6"
+          Id="Package\Fact_LecturerPerformance\Fact_LecturerPerformance"
+          TopLeft="292.5,223.5" />
+        <EdgeLayout
+          Id="Package\Fact_LecturerPerformance.Paths[OLE DB Source Output]"
+          TopLeft="350.1,84.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12.4,57.4"
+              Start="0,0"
+              End="12.4,49.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7"
+                    Point2="0,28.7"
+                    Point3="4,28.7" />
+                  <mssgle:LineSegment
+                    End="8.39999999999998,28.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.39999999999998,28.7"
+                    Point2="12.4,28.7"
+                    Point3="12.4,32.7" />
+                  <mssgle:LineSegment
+                    End="12.4,49.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fact_LecturerPerformance.Paths[Lookup No Match Output]"
+          TopLeft="362.5,183.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.8,40.4000000000001"
+              Start="0,0"
+              End="30.8,32.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2"
+                    Point2="0,20.2"
+                    Point3="4,20.2" />
+                  <mssgle:LineSegment
+                    End="26.8,20.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.8,20.2"
+                    Point2="30.8,20.2"
+                    Point3="30.8,24.2" />
+                  <mssgle:LineSegment
+                    End="30.8,32.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-40.40638671875,25.2,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fact_LecturerPerformance\STG_Fact_LecturerPerformance">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fact_LecturerPerformance\New Record?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Fact_LecturerPerformance]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fact_LecturerPerformance\Fact_LecturerPerformance">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\STG_Fact_LecturerPerformance">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\get level information"
+          TopLeft="179.785715210194,261.711766100095" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\get department information"
+          TopLeft="184.785717338932,328.664709539479" />
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance"
+          TopLeft="191.928574603431,398.758827036392" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3"
+          TopLeft="154.071431101585,13.1470589307765" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\get course information"
+          TopLeft="152.642858115994,179.617648238542" />
+        <NodeLayout
+          Size="189.6,41.6"
+          Id="Package\STG_Fact_LecturerPerformance\get lecturer information"
+          TopLeft="129.78571589139,96.6764714462122" />
+        <EdgeLayout
+          Id="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output1]"
+          TopLeft="245.042858115994,221.217648238542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.3428570942002,40.4941178615531"
+              Start="0,0"
+              End="22.3428570942002,32.9941178615531">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2470589307765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2470589307765"
+                    Point2="0,20.2470589307765"
+                    Point3="4,20.2470589307765" />
+                  <mssgle:LineSegment
+                    End="18.3428570942002,20.2470589307765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.3428570942002,20.2470589307765"
+                    Point2="22.3428570942002,20.2470589307765"
+                    Point3="22.3428570942002,24.2470589307765" />
+                  <mssgle:LineSegment
+                    End="22.3428570942002,32.9941178615531" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.0199581716499,25.2470589307765,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output]"
+          TopLeft="224.58571589139,138.276471446212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.4571422246038,41.3411767923296"
+              Start="0,0"
+              End="20.4571422246038,33.8411767923296">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.6705883961648" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.6705883961648"
+                    Point2="0,20.6705883961648"
+                    Point3="4,20.6705883961648" />
+                  <mssgle:LineSegment
+                    End="16.4571422246038,20.6705883961648" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.4571422246038,20.6705883961648"
+                    Point2="20.4571422246038,20.6705883961648"
+                    Point3="20.4571422246038,24.6705883961648" />
+                  <mssgle:LineSegment
+                    End="20.4571422246038,33.8411767923296" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.9628156064481,25.6705883961648,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STG_Fact_LecturerPerformance.Paths[OLE DB Source Output]"
+          TopLeft="228.328573496488,54.7470589307765">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.9294125154357"
+              Start="0,0"
+              End="0,34.4294125154357">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4294125154357" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output3]"
+          TopLeft="288.785717338932,370.26470953948">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.7428572644993,28.4941174969129"
+              Start="0,0"
+              End="16.7428572644993,20.9941174969129">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.2470587484565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.2470587484565"
+                    Point2="0,14.2470587484565"
+                    Point3="4,14.2470587484565" />
+                  <mssgle:LineSegment
+                    End="12.7428572644993,14.2470587484565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.7428572644993,14.2470587484565"
+                    Point2="16.7428572644993,14.2470587484565"
+                    Point3="16.7428572644993,18.2470587484565" />
+                  <mssgle:LineSegment
+                    End="16.7428572644993,20.9941174969129" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-39.8199580865003,19.2470587484565,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STG_Fact_LecturerPerformance.Paths[Lookup Match Output2]"
+          TopLeft="267.385715210194,303.311766100095">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.4000021287374,25.3529434393846"
+              Start="0,0"
+              End="21.4000021287374,17.8529434393846">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.6764717196923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.6764717196923"
+                    Point2="0,12.6764717196923"
+                    Point3="4,12.6764717196923" />
+                  <mssgle:LineSegment
+                    End="17.4000021287374,12.6764717196923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.4000021287374,12.6764717196923"
+                    Point2="21.4000021287374,12.6764717196923"
+                    Point3="21.4000021287374,16.6764717196923" />
+                  <mssgle:LineSegment
+                    End="21.4000021287374,17.8529434393846" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.4913856543813,17.6764717196923,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\get level information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Level]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\get department information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Department]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\STG_Fact_LecturerPerformance">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\DB Sourse Fact3">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\get course information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Course]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\STG_Fact_LecturerPerformance\get lecturer information">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Lecturer]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
